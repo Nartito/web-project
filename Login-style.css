@@ -1,0 +1,115 @@
+main {
+    background-color: #542f92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+main .boxx {
+    width: 800px;
+    height: 450px;
+    background-color: #673ab7;
+    border: 3px solid #e18100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ main .boxx .loginbox {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .boxx .loginbox h1 {
+    color: #e18100;
+    text-align: center;
+    margin-top: 35px;
+} 
+
+main .boxx .loginbox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 165px;
+}
+
+main .boxx .loginbox form input {
+    align-self: center;
+    width: 75%;
+    height: 28px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+main .boxx .loginbox form input::placeholder {
+    padding-left: 10px;
+}
+
+main .boxx .loginbox form span {
+    color: red;
+    font-size: 82%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .boxx .loginbox form #loginsubmit {
+    color: white;
+    background-color: #e18100;
+    width: 40%;
+    margin-top: 30px;
+}
+
+
+main .boxx .registerbox {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    main .boxx .registerbox h1 {
+        color: #e18100;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    main .boxx .registerbox form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 75px;
+    }
+
+        main .boxx .registerbox form input {
+            align-self: center;
+            width: 75%;
+            height: 28px;
+            border-radius: 15px;
+            border: none;
+        }
+
+            main .boxx .registerbox form input::placeholder {
+                padding-left: 10px;
+            }
+        
+        main .boxx .registerbox form span {
+            color: red;
+            font-size: 82%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        main .boxx .registerbox form #submit {
+            color: white;
+            background-color: #e18100;
+            width: 40%;
+            margin-top: 30px;
+        }
+

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+header .navbar {
+    display: flex;
+    height: 65px;
+    background-color: #673ab7;
+    justify-content: space-between;
+    padding: 0px 45px;
+}
+
+    header .navbar .mainlogo {
+        align-self: center;
+    }
+
+        header .navbar .mainlogo a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-size: 175%;
+        }
+
+        header .navbar .mainlogo i {
+            color: #e18100;
+            font-size: 110%;
+        }
+    
+    header .navbar .links {
+        align-self: center;
+        max-width: 50%;
+    }
+
+        header .navbar .links ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+            header .navbar .links ul li {
+                padding: 0px 15px;
+            }
+
+            header .navbar .links ul li .navsearch {
+                margin-top: 3px;
+            }
+
+                header .navbar .links ul li .navsearch input{
+                    border: none;
+                    width: 300px;
+                    height: 25px;
+                    margin-right: -4px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                header .navbar .links ul li .navsearch input::placeholder {
+                    padding-left: 10px;
+                    color: #555555;
+                }
+
+                header .navbar .links ul li .navsearch button {
+                    background-color: #e18100;
+                    color: #673ab7;
+                    border: none;
+                    width: 100px;
+                    height: 25px;
+                    font-weight: bold;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                header .navbar .links ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 125%;
+                    padding-bottom: 5px;
+                    margin-bottom: 0px;
+                }
+
+                header .navbar .links ul li a:hover {
+                    color: #e18100;
+                    border-bottom: 3px solid #e18100;
+                }
+
+                header .navbar .links ul li a:active {
+                    border-bottom: 3px solid #e18100;
+                }
+
+/* MAIN SECTION */
+
+main #coverbox {
+    height: 500px;
+    background-image: url(img/coverart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-shadow: inset 0px 0px 10px 5px black;
+}
+
+    main #coverbox .titlebox {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+        main #coverbox .titlebox h2 {
+            color: #e18100;
+            font-size:  250%;
+            text-shadow: 10px solid black;
+            margin-bottom: -25px;
+            margin-left: 9px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+            main #coverbox .titlebox h1 {
+                color: white;
+                font-size: 650%;
+                font-weight: 900;
+                margin-top: -10px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+            }
+
+main #aboutsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  padding: 50px 100px;
+}
+
+    main #aboutsection .card {
+        display: flex;
+        max-width: 330px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 35px 20px;
+    }
+
+    main #aboutsection .card h2 {
+        color: #e18100;
+        margin-bottom: 10px;
+    }
+
+    main #aboutsection .card p {
+        text-align: center;
+        color: #555555;
+    }
+
+    main #aboutsection i {
+        font-size: 300%;
+        color: #673ab7;
+        margin-bottom: 10px;
+    }
+
+main .gamesorts {
+    display: flex;
+    flex-direction: column;
+    background-color: #673ab7;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+main .gamesorts h1 {
+    color: #e18100;
+    margin-left: 55px;
+}
+
+main .gamesorts .sortby {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .gamesorts .sortby input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+main .gamecatalog {
+    background-color: #673ab7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .gamecatalog .gamecard {
+    width: 300px;
+    display: flex;
+    margin: 15px 15px;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+main .gamecatalog .gamecard .imagebox {
+    margin-bottom: -5px;
+}
+
+main .gamecatalog .gamecard .imagebox img {
+    width: 100%;
+}
+
+main .gamecatalog .gamecard .titlebox {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+main .gamecatalog .gamecard .titlebox a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 130%;
+}
+
+main .gamecatalog .gamecard .titlebox h2 {
+    color: #e18100;
+    margin-right: 10px;
+    font-size: 175%;
+}
+
+footer .newsletter {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e18100;
+    padding: 50px 100px;
+}
+
+footer .newsletter p {
+    max-width: 450px;
+    color: black;
+    font-size: 125%;
+}
+
+footer .newsletter .emailbox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+footer .newsletter .emailbox h1 {
+    color: black;
+    text-align: right;
+    margin-right: 13px;
+}
+
+footer .newsletter .emailbox input {
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    width: 400px;
+}
+
+footer .mainfooter {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 150px;
+    color: white;
+}
+
+footer .mainfooter .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .mainfooter .aboutus h1 {
+    color: #673ab7;
+}
+
+footer .mainfooter .aboutus p {
+    max-width: 500px;
+}
+
+footer .mainfooter .socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+footer .mainfooter .socialmedia h1 {
+    color: #e18100;
+}
+
+footer .mainfooter .socialmedia .socialmedialinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .mainfooter .socialmedia .socialmedialinks a {
+    text-decoration: none;
+    font-size: 200%;
+    color: white;
+    margin: 0px 5px;
+}
+
+footer .mainfooter .contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .credits {
+    padding: 5px 150px;
+    background-color: #222222;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

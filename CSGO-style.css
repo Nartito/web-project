@@ -1,0 +1,98 @@
+main .jumbotron {
+    background-color: #542f92;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
+
+    main .jumbotron .photobox {
+        width: 375px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+        main .jumbotron .photobox img {
+            width: 100%;
+            height: 100%;
+        }
+    
+    main .jumbotron .descriptionarea {
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 65%;
+    }
+
+        main .jumbotron .descriptionarea h1 {
+            color: #e18100;
+        }
+
+        main .jumbotron .descriptionarea p {
+            font-size: 115%;
+        }
+
+        main .jumbotron .descriptionarea .review {
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+        }
+        
+            main .jumbotron .descriptionarea .review .userinfo {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                main .jumbotron .descriptionarea .review .userinfo .reviewicons {
+                    display: flex;
+                    justify-content: space-between;
+                    color: gold;
+                }
+
+            main .jumbotron .descriptionarea .review .reviewtext p {
+                color: grey;
+            }
+        
+main .jumbotron1 {
+    background-color: #542f92;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 16px;
+    padding-bottom: 50px;
+}
+
+main .jumbotron1 .pricing {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 101.8%;
+    text-align: center;
+}
+
+    main .jumbotron1 .pricing .retailer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+        main .jumbotron1 .pricing .retailer .price {
+            height: 35px;
+            align-self: center;
+            width: 100px;
+            background-color: green;
+            border: none;
+            font-size: 150%;
+        }
+
+
