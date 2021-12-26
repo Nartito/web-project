@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/c28668fdb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage-style.css">
+    <link rel="stylesheet" href="Login-style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In to GAMESTORE</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="mainlogo">
+                <a href="Homepage.html"><i class="fab fa-monero"></i> GAMESTORE</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="Homepage.html">Go Home</a></li>
+                    <li><a href="Login.html">My Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    
+    <!-- MAIN -->
+    <main>
+        <div class="boxx">
+            <div class="registerbox">
+                <h1>REGISTER TO GAMESTORE</h1>
+
+                <form action="#" autocomplete="off" onsubmit="return validation()">
+                    
+                    <input type="text" id="username" placeholder="Username">
+                    <span id="usernamevalidation"></span>
+                    <input type="password" id="password" placeholder="Password">
+                    <span id="passwordvalidation"></span>
+                    <input type="email" id="email" placeholder="E-Mail">
+                    <span id="emailvalidation"></span>
+                    <input type="email" id="emailverification" placeholder="Confirm E-Mail">
+                    <span id="emailvalidationverification"></span>
+                    <input type="text" id="mobile" placeholder="Mobile Number (Optional)">
+                    <span id="mobileverification"></span>
+                    
+                    <input type="submit" value="REGISTER" id="submit">
+                </form>
+            </div>
+
+            <div class="loginbox">
+                <h1>LOG IN</h1>
+                <form action="#" autocomplete="off" onsubmit="return login()">
+                    <input type="text" id="loginusername" placeholder="Username">
+                    <input type="password" id="loginpassword" placeholder="Password">
+                    <span id="loginvalidation"></span>
+                    <input type="submit" id="loginsubmit" value="LOGIN">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="newsletter">
+            <p>
+                Subscribe to our newsletter! Enter your e-mail in the field to get notified for
+                any upcoming games or sale events, announcements and much more!
+            </p>
+            <div class="emailbox">
+                <h1>YOUR E-MAIL ADDRESS</h1>
+                <input type="email" name="email" id="emailinput">
+            </div>
+        </div>
+        <div class="mainfooter">
+            <div class="aboutus">
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium voluptatibus aperiam, nulla adipisci distinctio 
+                    accusamus eveniet quisquam non libero error voluptates ratione 
+                    mollitia corrupti reprehenderit laudantium tempora consectetur 
+                    id magnam?</p>
+            </div>
+            <div class="socialmedia">
+                <h1>SOCIAL MEDIA</h1>
+                <div class="socialmedialinks">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-twitch"></i></a>
+                    <a href=""><i class="fab fa-pinterest-square"></i></a>
+                </div>
+            </div>
+            <div class="contactinfo">
+                <p>genericemail@gamestore.net <i class="fas fa-at"></i></p>
+                <p>1000 Location, Prishtina <i class="fas fa-map-marker-alt"></i></p>
+                <p>+(123) 45 678 910 <i class="fas fa-phone-square"></i></p>
+            </div>
+        </div>
+        <div class="credits">
+            <p>Made by Nart Shufta (202151626)</p>
+            <p>Made by Blendi Mehmeti (202152177)</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <script type="text/javascript">
+        function validation() {
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+            var emaill = document.getElementById('email').value;
+            var confemail = document.getElementById('emailverification').value;
+            var telephone = document.getElementById('mobile').value;
+            
+            if (user == "") {
+                document.getElementById('usernamevalidation').innerHTML = "Please write a username in the fieldbox!!";
+            }
+
+            if (user.length <= 3) {
+                document.getElementById('usernamevalidation').innerHTML = "Username needs to be at least 4 characters long";
+            }
+            
+            if (pass == "") {
+                document.getElementById('passwordvalidation').innerHTML = "Please write a valid password in the fieldbox!";
+            }
+
+            if (pass.length <= 5 || pass.length >=21) {
+                document.getElementById('passwordvalidation').innerHTML = "Password needs to be between 6 and 20 characters";
+            }
+
+            if (pass === "password") {
+                document.getElementById('passwordvalidation').innerHTML = "Password cannot be set to 'Password'. Nice try";
+            }
+
+            if (emaill == "") {
+                document.getElementById('emailvalidation').innerHTML = "Please write an e-mail in the fieldbox!";
+            }
+
+            if (confemail == "") {
+                document.getElementById('emailvalidationverification').innerHTML = "Field is empty!";
+            }
+            
+            if (confemail != emaill) {
+                document.getElementById('emailvalidationverification').innerHTML = "E-mails don't match";
+            }
+        }
+
+        function login() {
+            var defaultusername = "GAMESTOREADMIN";
+            var defaultpassword = "12345678";
+            var loginuser = document.getElementById('loginusername').value;
+            var loginpass = document.getElementById('loginpassword').value;
+
+            if (loginuser == "" || loginpass == "") {
+                document.getElementById('loginvalidation').innerHTML = "Username or Password field is empty!";
+            }
+            else if (loginuser != defaultusername) {
+                document.getElementById('loginvalidation').innerHTML = "Username is invalid";
+            }
+            else if (loginpass != defaultpassword) {
+                document.getElementById('loginvalidation').innerHTML = "Password is invalid!";
+            }
+            else {
+                document.getElementById('loginvalidation').innerHTML = "SUCCESS!!!!";
+            }
+        }
+    </script>
+</body>
+</html>
